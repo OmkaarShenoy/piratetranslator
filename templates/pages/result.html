@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link type="text/css" rel="stylesheet" href="/static/css/font-awesome-4.1.0.min.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/bootstrap-3.1.1.min.css">
+<link type="text/css" rel="stylesheet" href="/static/css/bootstrap-theme-3.1.1.min.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/layout.main.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.responsive.css" />
+<link type="text/css" rel="stylesheet" href="/static/css/main.quickfix.css" />
+<head>
+
+
+
+</head>
+<body>
+
+<style>
+h1{ text-align: center
+
+
+    }
+</style>
+ <br>
+ <br>
+ <br>
+ <br>
+<br>
+<br>
+
+
+<a href="https://ibb.co/2dSdj6c"><img src="https://i.ibb.co/kXJXhyq/image-removebg-preview-6.png" alt="image-removebg-preview-6" border="0" width="100px"></a><br /><br />
+
+<h1>The translated test is:</h1>
+<h1><centre>{{result}}</centre></h1>
+ <br>
+ <br>
+
+
+
+
+
+<style type=text/css>
+        p {
+            background-color: black;
+            margin: 10px;
+            border-radius: 25px;
+        }
+
+        div {
+            color: black;
+            background-color: 009900;
+            margin: 2px;
+            font-size: 25px;
+            border-radius: 50px;
+        }
+
+        body {
+            text-align: center;
+            border-radius: 25px;
+        }
+
+}
+    </style>
+<div align="centre">
+
+    <form action="{{ url_for('handle_data') }}" method="post">
+        <input type="text" name="user_input" placeholder = "Translate again">
+        <button class="button is-danger" >
+            Translate
+        </button>
+    </form>
+
+
+
+</div>
+
+
+</body>
+</html>
