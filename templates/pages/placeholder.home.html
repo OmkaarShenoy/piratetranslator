@@ -1,10 +1,56 @@
+
 {% extends 'layouts/main.html' %}
-{% block title %}Home{% endblock %}
+
 {% block content %}
 
-<div class="page-header">
-  <h1>Sticky footer with fixed navbar</h1>
-</div>
-<p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
+<style type=text/css>
+        p {
+            background-color: black;
+            margin: 10px;
+            border-radius: 25px;
+        }
 
+        div {
+            color: black;
+            background-color: 009900;
+            margin: 2px;
+            font-size: 25px;
+            border-radius: 25px;
+        }
+
+        body {
+            text-align: center;
+            border-radius: 25px;
+        }
+
+}
+    </style>
+
+<style>
+h1{ text-align: center
+
+
+    }
+</style>
+<br>
+<br>
+<style>img {
+  width: 40px,
+  height: 30px
+}</style>
+<a href="https://ibb.co/2dSdj6c"><img src="https://i.ibb.co/kXJXhyq/image-removebg-preview-6.png" alt="image-removebg-preview-6" border="0" width="100px"></a><br /><br />
+<h1>What would you like to translate?</h1>
+<br>
+<br>
+<div align="centre">
+    <form action="{{ url_for('handle_data') }}" method="post">
+        <input type="text" name="user_input">
+        <button class="button is-danger" >
+            Translate
+        </button>
+    </form>
+
+
+
+</div>
 {% endblock %}
